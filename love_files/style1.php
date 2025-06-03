@@ -1,0 +1,170 @@
+body {
+	margin: 100px;
+	margin-top: 100px;
+	font-family: monospace;
+	font-size: 14px;
+	line-height: 20px;
+	text-size-adjust: 100%;
+	height: 100%;
+	overflow-y: hidden
+}
+
+a,
+a:visited {
+	color: #cdd6f4;
+	#text-shadow: 1px 1px 8px white;
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bolder;
+	transition: 130ms linear;
+}
+
+input,
+input:focus {
+	border: none;
+	color: white;
+	background: transparent;
+	font-family: monospace;
+	font-size: 14px;
+	outline: none;
+}
+
+::selection {
+	background: rgba(255, 255, 0, .3);
+	padding: 3px;
+}
+
+hr {
+	width: 15%;
+	margin-left: 0px;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Spacer div with approx 30 lines of blank vertical space */
+.spacer {
+  height: 1em; /* adjust this if your line height differs */
+}
+.spacer2 {
+  height: 0.5em; /* adjust this if your line height differs */
+}
+.spacer3 {
+  height: 3em; /* adjust this if your line height differs */
+}
+
+
+code,
+.header {
+	color: white;
+	#text-shadow: 1px 1px 8px black;
+	user-select: none;
+}
+
+.header {
+	font-weight: bold;
+}
+
+.info {
+    color: white;
+	z-index: 1500;
+	padding-left: 10px;
+	padding-right: 60px;
+	margin-left: 10px;
+	border-left: 1px solid rgba(255, 255, 255, .4);
+}
+
+.info code {
+  display: block;
+  max-width: 70ch; /* limits to ~60 characters per line */
+  white-space: normal; /* allows wrapping */
+  word-break: break-word; /* breaks long unbroken strings if needed */
+}
+
+.info span {
+	display: block;
+}
+
+#background1,
+#background2,
+#background-cover,
+#background-mocha {
+	margin: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#background1 {
+    background: no-repeat center center fixed url('../media/1.gif');
+    z-index: -5;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: optimize-contrast;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+}
+
+#background2 {
+    background: no-repeat center center fixed url('../media/2.gif');
+    z-index: -5;
+    background-size: cover;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: optimize-contrast;
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -o-crisp-edges;
+}
+
+#background-cover {
+	background-color: #1d1f21;
+	opacity: 0.3;
+	z-index: -1;
+}
+
+#background-mocha {
+	background-color: #181825;
+	opacity: 1;
+    background-size: cover;
+	z-index: -5;
+}
+
+footer {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+	body {
+		margin: 20px 20px 20px 20px;
+		font-size: 13px;
+		line-height: 18px;
+		overflow-y: auto;
+	}
+
+	.info {
+		padding-left: 10px;
+		padding-right: 20px;
+		margin-left: 0;
+	}
+
+	.header {
+		margin-left: 0;
+	}
+
+	hr {
+		width: 30%;
+	}
+}
