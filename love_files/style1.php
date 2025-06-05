@@ -1,18 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 body {
   margin: 100px;
   margin-top: 100px;
-  font-family: monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   line-height: 20px;
   text-size-adjust: 100%;
-  height: 100%;
-  overflow-y: hidden;
+  height: auto;
+  overflow-y: scroll;
 }
 
 a,
 a:visited {
   color: #cdd6f4;
-  /* text-shadow: 1px 1px 8px white; */ /* commented out */
   text-decoration: none;
 }
 
@@ -26,7 +27,7 @@ input:focus {
   border: none;
   color: white;
   background: transparent;
-  font-family: monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 14px;
   outline: none;
 }
@@ -65,8 +66,8 @@ hr {
 code,
 .header {
   color: white;
-  /* text-shadow: 1px 1px 8px black; */
   user-select: none;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .header {
@@ -84,9 +85,9 @@ code,
 
 .info code {
   display: block;
-  max-width: 70ch; /* limits to ~60 characters per line */
-  white-space: normal; /* allows wrapping */
-  word-break: break-word; /* breaks long unbroken strings if needed */
+  max-width: 70ch;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .info span {
@@ -169,22 +170,20 @@ footer {
   }
 }
 
-/* audiobox styles previously inside HTML <style> moved here */
 .audiobox.floating {
   position: fixed;
   bottom: 15px;
   right: 15px;
   background: #181825dd;
-  padding: 8px 16px; /* more horizontal padding */
-  border-radius: 0; /* square edges */
-  box-shadow: 0 0 2px #cdd6f4bb; /* 2px radius glow */
+  padding: 8px 16px;
+  border-radius: 0;
+  box-shadow: 0 0 2px #cdd6f4bb;
   font-size: 13px;
   z-index: 10000;
   user-select: none;
   color: white;
-  font-family: monospace;
+  font-family: 'JetBrains Mono', monospace;
 
-  /* let width depend on content, but constrained */
   width: fit-content;
   min-width: 280px;
   max-width: 360px;
@@ -203,7 +202,7 @@ footer {
 }
 
 .now-playing b {
-  color: #cdd6f4; /* soft blue */
+  color: #cdd6f4;
 }
 
 .controls {
@@ -231,10 +230,9 @@ footer {
 
 .left-controls span:hover,
 .right-controls span:hover {
-  color: #cdd6f4; /* soft blue on hover */
+  color: #cdd6f4;
 }
 
-/* For play button, give a bit more width so it doesn't jump */
 .left-controls span {
   min-width: 60px;
 }
