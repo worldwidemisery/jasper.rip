@@ -1,0 +1,99 @@
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>000 > site’s up / i'm alive</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="theme-color" content="#be2cdb" />
+  <link rel="stylesheet" href="../love_files/style1.php" />
+  <link rel="shortcut icon" type="image/x-icon" href="../love_files/favicon.ico" />
+</head>
+
+<body>
+  <span class="header">000 > site’s up / i'm alive</span>
+  <div class="spacer2"></div>
+  <div id="background-mocha"></div>
+
+  <div class="info">
+    <code>
+      june 2025  
+      <br /><br />
+      took me long enough to get something up, but here it is — no templates, no frameworks, no bullshit. just html, css, and enough php to barely hold it together. welcome to the personal website.  
+      <br /><br />
+      part of the reason i made this is because i’ve been craving some kind of creative outlet that isn’t poisoned by surveillance systems, invisible leashes and engagement economy. not trying to perform. not trying to optimise anything. just wanted a place to put shit. a place that feels like my own.  
+      <br /><br />
+      so far that’s looked like building this site and making
+      <a href="https://github.com/worldwidemisery/pycamp" target="_blank">pycamp</a>, a little cli tool for digging through
+      <a href="https://bandcamp.com" target="_blank">bandcamp</a> by genre. nothing flashy.. just fetches, parses, scrapes, and gives you albums on whatever tip you're after. i’ve been messing with scripts, broken weakauras, weird cli tools, addons, whatever gets the brain moving. and i can feel that spark again.  
+      <br /><br />
+      it’s been a couple of years since i made anything just for fun. like really
+      <b>made</b> something. not for work, not for someone else, not to look good. just building out of curiosity or frustration or boredom. and fuck it feels good. it’s invigorating in a way i forgot i needed.  
+      <br /><br />
+      i’m not trying to brand myself or anything. this isn’t a portfolio. it’s just what happens when you put your head down and make shit again. maybe it’s ugly, maybe it breaks. but i fucking made it.  
+      <br /><br />
+      like gorilla biscuits told me, start today..  
+      <br /><br />
+
+      <div class="audiobox floating">
+        <div class="now-playing">
+          now playing: <b>gorilla biscuits - start today</b>
+        </div>
+
+        <div class="controls">
+          <div class="left-controls">
+            <span id="play-button">▶ play</span>
+          </div>
+
+          <div class="right-controls">
+            <span id="vol-down">– vol</span>
+            <span id="vol-up">+ vol</span>
+          </div>
+        </div>
+
+        <audio id="player" style="display:none;">
+          <source src="../media/start today.mp3" type="audio/mpeg" />
+          your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <a href="../blog.html">← back to blog index</a>
+    </code>
+  </div>
+
+  <script>
+    const audio = document.getElementById('player');
+    const playBtn = document.getElementById('play-button');
+    const volUp = document.getElementById('vol-up');
+    const volDown = document.getElementById('vol-down');
+
+    let isPlaying = false;
+    audio.volume = 0.5;
+
+    playBtn.onclick = () => {
+      if (isPlaying) {
+        audio.pause();
+        playBtn.innerText = '▶ play';
+      } else {
+        audio.play();
+        playBtn.innerText = '⏸ pause';
+      }
+      isPlaying = !isPlaying;
+    };
+
+    volUp.onclick = () => {
+      audio.volume = Math.min(audio.volume + 0.1, 1);
+    };
+
+    volDown.onclick = () => {
+      audio.volume = Math.max(audio.volume - 0.1, 0);
+    };
+  </script>
+
+  <div class="spacer"></div>
+
+  <footer>
+    <img src="../media/plove.gif" alt="powered by Love" />
+    <img src="../media/bd.JPG" alt="ballroom dancers" />
+    <img src="../media/eye.gif" alt="watch out" />
+  </footer>
+</body>
+</html>

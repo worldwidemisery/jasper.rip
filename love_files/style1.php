@@ -1,85 +1,85 @@
 body {
-	margin: 100px;
-	margin-top: 100px;
-	font-family: monospace;
-	font-size: 14px;
-	line-height: 20px;
-	text-size-adjust: 100%;
-	height: 100%;
-	overflow-y: hidden
+  margin: 100px;
+  margin-top: 100px;
+  font-family: monospace;
+  font-size: 14px;
+  line-height: 20px;
+  text-size-adjust: 100%;
+  height: 100%;
+  overflow-y: hidden;
 }
 
 a,
 a:visited {
-	color: #cdd6f4;
-	#text-shadow: 1px 1px 8px white;
-	text-decoration: none;
+  color: #cdd6f4;
+  /* text-shadow: 1px 1px 8px white; */ /* commented out */
+  text-decoration: none;
 }
 
 a:hover {
-	font-weight: bolder;
-	transition: 130ms linear;
+  font-weight: bolder;
+  transition: 130ms linear;
 }
 
 input,
 input:focus {
-	border: none;
-	color: white;
-	background: transparent;
-	font-family: monospace;
-	font-size: 14px;
-	outline: none;
+  border: none;
+  color: white;
+  background: transparent;
+  font-family: monospace;
+  font-size: 14px;
+  outline: none;
 }
 
 ::selection {
-	background: rgba(255, 255, 0, .3);
-	padding: 3px;
+  background: rgba(255, 255, 0, 0.3);
+  padding: 3px;
 }
 
 hr {
-	width: 15%;
-	margin-left: 0px;
+  width: 15%;
+  margin-left: 0px;
 }
 
 @keyframes fadeIn {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-/* Spacer div with approx 30 lines of blank vertical space */
 .spacer {
-  height: 1em; /* adjust this if your line height differs */
-}
-.spacer2 {
-  height: 0.5em; /* adjust this if your line height differs */
-}
-.spacer3 {
-  height: 3em; /* adjust this if your line height differs */
+  height: 1em;
 }
 
+.spacer2 {
+  height: 0.5em;
+}
+
+.spacer3 {
+  height: 3em; 
+}
 
 code,
 .header {
-	color: white;
-	#text-shadow: 1px 1px 8px black;
-	user-select: none;
+  color: white;
+  /* text-shadow: 1px 1px 8px black; */
+  user-select: none;
 }
 
 .header {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .info {
-    color: white;
-	z-index: 1500;
-	padding-left: 10px;
-	padding-right: 60px;
-	margin-left: 10px;
-	border-left: 1px solid rgba(255, 255, 255, .4);
+  color: white;
+  z-index: 1500;
+  padding-left: 10px;
+  padding-right: 60px;
+  margin-left: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .info code {
@@ -90,56 +90,56 @@ code,
 }
 
 .info span {
-	display: block;
+  display: block;
 }
 
 #background1,
 #background2,
 #background-cover,
 #background-mocha {
-	margin: auto;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+  margin: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 #background1 {
-    background: no-repeat center center fixed url('../media/1.gif');
-    z-index: -5;
-    background-size: cover;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-    image-rendering: optimize-contrast;
-    image-rendering: optimizeSpeed;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
+  background: no-repeat center center fixed url('../media/1.gif');
+  z-index: -5;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: optimize-contrast;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
 }
 
 #background2 {
-    background: no-repeat center center fixed url('../media/2.gif');
-    z-index: -5;
-    background-size: cover;
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
-    image-rendering: optimize-contrast;
-    image-rendering: optimizeSpeed;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: -o-crisp-edges;
+  background: no-repeat center center fixed url('../media/2.gif');
+  z-index: -5;
+  background-size: cover;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: optimize-contrast;
+  image-rendering: optimizeSpeed;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
 }
 
 #background-cover {
-	background-color: #1d1f21;
-	opacity: 0.3;
-	z-index: -1;
+  background-color: #1d1f21;
+  opacity: 0.3;
+  z-index: -1;
 }
 
 #background-mocha {
-	background-color: #181825;
-	opacity: 1;
-    background-size: cover;
-	z-index: -5;
+  background-color: #181825;
+  opacity: 1;
+  background-size: cover;
+  z-index: -5;
 }
 
 footer {
@@ -147,24 +147,94 @@ footer {
 }
 
 @media (max-width: 768px) {
-	body {
-		margin: 20px 20px 20px 20px;
-		font-size: 13px;
-		line-height: 18px;
-		overflow-y: auto;
-	}
+  body {
+    margin: 20px 20px 20px 20px;
+    font-size: 13px;
+    line-height: 18px;
+    overflow-y: auto;
+  }
 
-	.info {
-		padding-left: 10px;
-		padding-right: 20px;
-		margin-left: 0;
-	}
+  .info {
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-left: 0;
+  }
 
-	.header {
-		margin-left: 0;
-	}
+  .header {
+    margin-left: 0;
+  }
 
-	hr {
-		width: 30%;
-	}
+  hr {
+    width: 30%;
+  }
+}
+
+/* audiobox styles previously inside HTML <style> moved here */
+.audiobox.floating {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #181825dd;
+  padding: 8px 16px; /* more horizontal padding */
+  border-radius: 0; /* square edges */
+  box-shadow: 0 0 2px #cdd6f4bb; /* 2px radius glow */
+  font-size: 13px;
+  z-index: 10000;
+  user-select: none;
+  color: white;
+  font-family: monospace;
+
+  /* let width depend on content, but constrained */
+  width: fit-content;
+  min-width: 280px;
+  max-width: 360px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.now-playing {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-weight: normal;
+}
+
+.now-playing b {
+  color: #cdd6f4; /* soft blue */
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-controls,
+.right-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.left-controls span,
+.right-controls span {
+  cursor: pointer;
+  color: white;
+  user-select: none;
+  transition: color 130ms linear;
+  min-width: 32px;
+  text-align: center;
+}
+
+.left-controls span:hover,
+.right-controls span:hover {
+  color: #cdd6f4; /* soft blue on hover */
+}
+
+/* For play button, give a bit more width so it doesn't jump */
+.left-controls span {
+  min-width: 60px;
 }
