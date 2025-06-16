@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>002 > cha cha real smooth (2022)</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="theme-color" content="#be2cdb" />
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="../style/favicon.ico" />
+</head>
+
+<body>
+  <span class="header">002 > cha cha real smooth (2022)</span>
+  <div class="spacer2"></div>
+  <div id="background-mocha"></div>
+
+  <div class="info">
+    <code>
+      june 2025  
+      <br />
+      we talked like we had time
+      <br /><br />
+
+      i saw too much of myself in andrew like not in a charming, aspirational way. in a <i>fuckkk ive done that..</i> kind of way. caring way too much, way too quickly. confusing emotional intimacy for romantic invitation. wanting to be part of someone's life so badly that you start imagining the shape of it before they've even said yes.  
+      and domino.. she's so much her own person that andrew never really stood a chance. not because she doesn't love him. she does. its obvious. but she's already in the middle of her story and he's barely started writing his. and i understand that feeling so well. falling for someone who already has a life. someone with depth, and hurt, and routines that don't include you. someone who's been through enough to recognise your care as genuine but also knows they cant afford to need it.  
+      i've been in that space where you want to help, to support, to just be there, not because you expect anything in return but because you don't know how else to love someone. you think <i>maybe if i just show them i can handle it.. handle them. they'll make room for me</i> but that's not how it works. life isnt about proving you're useful enough to be loved.  
+      <br /><br />
+      and the way andrew connects with lola.. fuck. that destroyed me. because that's not performative. that's not <i>i want your mum so i'll be nice to her kid</i>. that's real, it's instinctive. the care comes naturally. he sees her and she lets him in, slowly, which means more than any romantic gesture ever could.  
+      and i reckon that's the most painful part of it all. realising that you might actually have fit. you might've been good. but that doesn't mean its yours. domino saw that, she saw how good he was with lola. how patient, how easy it came to him. and i think that's part of why she backed off. because she knew it could work and it still wouldn't be fair. she didn't want to let someone love a version of her that didn't exist anymore.  
+      <br /><br />
+      there's this fucking killing ache in being the right kind of person at the wrong time. this horrible inbetween where you're not being rejected exactly, you're being understood. and that's infinitely worse. when someone sees everything you're offering and still says <i>thank you, but nah.</i>  
+      that kind of heartbreak doesn't leave a clean bruise. it lingers in your chest. you don't get to be mad. there's no villain. just timing. just the quiet dignity of backing off without bitterness. and that's what andrew does. that's what made me cry. not just the missed connection but the grace. the choice to still be kind after the door closes.  
+      <br /><br />
+      and i think about lola too, how she trusted him. how rare that is and how much that means, especially for a kid who doesn't let people in easily. andrew didn't save her, he didn't try to. he just was there. and that kind of presence is everything. it made me think about how love isn't always loud or dramatic. sometimes it's just showing up and not needing to be thanked for it.  
+      <br /><br />
+
+      <div class="image-square">
+        <img src="../media/lolahop.jpg" alt="the moyu" style="height:200px;">
+      </div>
+
+      <br />
+
+      i dunno. it fucking wrecked me. it understands something really hard to explain in the heartbreak of being good for someone in a way that doesn't lead to being with them.  
+      <br />
+      and the most fucked part is you'd still do it again. you'd still be there. still listen. still write notes. still care. even knowing how it ends. because some people are just worth that.  
+      <br /><br />
+      and maybe that's love too. just not the kind you get to keep.  
+      <br /><br />
+
+      <div class="audiobox floating">
+        <div class="now-playing">
+          now playing: <b>esthero - that girl</b>
+        </div>
+
+        <div class="controls">
+          <div class="left-controls">
+            <span id="play-button">▶ play</span>
+          </div>
+
+          <div class="right-controls">
+            <span id="vol-down">– vol</span>
+            <span id="vol-up">+ vol</span>
+          </div>
+        </div>
+
+        <audio id="player" style="display:none;">
+          <source src="../media/that girl.mp3" type="audio/mpeg" />
+          your browser does not support the audio element.
+        </audio>
+      </div>
+
+      <a href="../blog.html">← back to blog index</a>
+    </code>
+  </div>
+
+  <script>
+    const audio = document.getElementById('player');
+    const playBtn = document.getElementById('play-button');
+    const volUp = document.getElementById('vol-up');
+    const volDown = document.getElementById('vol-down');
+
+    let isPlaying = false;
+    audio.volume = 0.5;
+
+    playBtn.onclick = () => {
+      if (isPlaying) {
+        audio.pause();
+        playBtn.innerText = '▶ play';
+      } else {
+        audio.play();
+        playBtn.innerText = '⏸ pause';
+      }
+      isPlaying = !isPlaying;
+    };
+
+    volUp.onclick = () => {
+      audio.volume = Math.min(audio.volume + 0.1, 1);
+    };
+
+    volDown.onclick = () => {
+      audio.volume = Math.max(audio.volume - 0.1, 0);
+    };
+  </script>
+
+  <div class="spacer"></div>
+
+  <footer>
+    <img src="../media/plove.gif" alt="powered by Love" />
+    <img src="../media/bd.JPG" alt="ballroom dancers" />
+    <img src="../media/eye.gif" alt="watch out" />
+  </footer>
+</body>
+</html>

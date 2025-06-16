@@ -244,6 +244,13 @@ footer {
   box-shadow: 0 0 1px 0px #cdd6f4;
 }
 
+.image-square img {
+  width: fit-content;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 0 1px 0px #cdd6f4;
+}
+
 .video-slot {
   position: relative;
   width: 100%;
